@@ -10,8 +10,8 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   TextEditingController _email =
-      TextEditingController(text: "abbie_wilson@gmail.com");
-  TextEditingController dateOfBirth = TextEditingController(text: "04-19-1992");
+      TextEditingController(text: "vaibhav2012093@akgec.ac.in");
+  TextEditingController dateOfBirth = TextEditingController(text: "04-19-2001");
   TextEditingController password = TextEditingController(text: "123456");
   @override
   Widget build(BuildContext context) {
@@ -84,7 +84,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       shape: BoxShape.circle,
                                       image: DecorationImage(
                                           image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1531256456869-ce942a665e80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI4fHxwcm9maWxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"),
+                                              "https://i.ibb.co/tcFSGFT/v.jpg"),
                                           fit: BoxFit.cover)),
                                 ),
                               )
@@ -98,7 +98,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Abbie Wilson",
+                              "Vaibhav Yadav",
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -108,7 +108,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               height: 10,
                             ),
                             Text(
-                              "Credit score: 73.50",
+                              "Credit score: 70.00",
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -145,7 +145,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "United Bank Asia",
+                                "India Bank",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 12,
@@ -155,7 +155,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 10,
                               ),
                               Text(
-                                "\$2446.90",
+                                "\Rs.40,02,446.90",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,
@@ -228,7 +228,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 20,
                 ),
                 Text(
-                  "Date of birth",
+                  "Password",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,

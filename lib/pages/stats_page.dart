@@ -31,13 +31,13 @@ class _StatsPageState extends State<StatsPage> {
         "icon": Icons.arrow_back,
         "color": blue,
         "label": "Income",
-        "cost": "\$6593.75"
+        "cost": "\Rs.60,593"
       },
       {
         "icon": Icons.arrow_forward,
         "color": red,
         "label": "Expense",
-        "cost": "\$2645.50"
+        "cost": "Rs.29,645"
       }
     ];
     return SingleChildScrollView(
@@ -167,7 +167,7 @@ class _StatsPageState extends State<StatsPage> {
                             height: 10,
                           ),
                           Text(
-                            "\$2446.90",
+                            "\Rs.2,56,446.90",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 25,

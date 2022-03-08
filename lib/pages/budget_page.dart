@@ -188,7 +188,7 @@ class _BudgetPageState extends State<BudgetPage> {
                             Padding(
                               padding: const EdgeInsets.only(top: 3),
                               child: Text(
-                                "\$5000.00",
+                                "\Rs40,00,000.00",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 13,
