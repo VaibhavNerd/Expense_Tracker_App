@@ -1,10 +1,7 @@
 # Budget Tracker App UI
 
-- [Support me on Patreon](https://www.patreon.com/sopheamenvan?fan_landing=true)
-- [Watch on youtube Part I](https://youtu.be/whDdLQIUnHA)
-- [Watch on youtube Part II](https://youtu.be/VGj4ayNAm6Q)
 
-![App UI](https://user-images.githubusercontent.com/16510597/106842001-c4c14600-66d5-11eb-9616-bad26bee688a.jpg)
+
 
 A new Flutter project.
 
