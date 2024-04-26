@@ -2,7 +2,8 @@ import 'package:budget_tracker_ui/json/daily_json.dart';
 import 'package:budget_tracker_ui/json/day_month.dart';
 import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
+
 
 class DailyPage extends StatefulWidget {
   @override
@@ -112,154 +113,154 @@ class _DailyPageState extends State<DailyPage> {
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Column(
-              children: <Widget>[
-                Container(
-                    padding: EdgeInsets.only(right: 15.0),
-                    width: MediaQuery.of(context).size.width - 30.0,
-                    height: MediaQuery.of(context).size.height - 50.0,
-                    child: GridView.count(shrinkWrap: true,scrollDirection: Axis.vertical,
-                      crossAxisCount: 2,
-                      primary: false,
-                      crossAxisSpacing: 10.0,
-                      mainAxisSpacing: 15.0,
-                      childAspectRatio: 0.8,
-                      children: <Widget>[
-                        _buildCard('Automobile', '\Rs.300.99', 'assets/images/auto.png',
-                            false, false, context),
-                        _buildCard('Bank', '\Rs.500', 'assets/images/bank.png',
-                            false, true, context),
-                        _buildCard('Eating', '\Rs.199',
-                            'assets/images/eating.png', false, false, context),
-                        _buildCard('Gift', '\$200', 'assets/images/gift.png',
-                            false, false, context),
-                        _buildCard('Charity', '\Rs.2,000',
-                            'assets/images/charity.png', false, true, context),
-                        _buildCard('Gift', '\$200', 'assets/images/gift.png',
-                            false, false, context)
-                      ],
-                    )),
-                SizedBox(height: 30.0)
-              ],
-            ),
+            children: <Widget>[
+              Container(
+                  padding: EdgeInsets.only(right: 15.0),
+                  width: MediaQuery.of(context).size.width - 30.0,
+                  height: MediaQuery.of(context).size.height - 50.0,
+                  child: GridView.count(shrinkWrap: true,scrollDirection: Axis.vertical,
+                    crossAxisCount: 2,
+                    primary: false,
+                    crossAxisSpacing: 10.0,
+                    mainAxisSpacing: 15.0,
+                    childAspectRatio: 0.8,
+                    children: <Widget>[
+                      _buildCard('Automobile', '\Rs.300.99', 'assets/images/auto.png',
+                          false, false, context),
+                      _buildCard('Bank', '\Rs.500', 'assets/images/bank.png',
+                          false, true, context),
+                      _buildCard('Eating', '\Rs.199',
+                          'assets/images/eating.png', false, false, context),
+                      _buildCard('Gift', '\$200', 'assets/images/gift.png',
+                          false, false, context),
+                      _buildCard('Charity', '\Rs.2,000',
+                          'assets/images/charity.png', false, true, context),
+                      _buildCard('Gift', '\$200', 'assets/images/gift.png',
+                          false, false, context)
+                    ],
+                  )),
+              SizedBox(height: 30.0)
+            ],
+          ),
 
 
 
-            // //   child: Column(
-            // //       children: List.generate(daily.length, (index) {
-            // //     return Column(
-            // //       children: [
-            // //         Row(
-            // //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            // //           children: [
-            // //             Container(
-            // //               width: (size.width - 40) * 0.7,
-            // //               child: Row(
-            // //                 children: [
-            // //                   Container(
-            // //                     width: 50,
-            // //                     height: 50,
-            // //                     decoration: BoxDecoration(
-            // //                       shape: BoxShape.circle,
-            // //                       color: grey.withOpacity(0.1),
-            // //                     ),
-            // //                     child: Center(
-            // //                       child: Image.asset(
-            // //                         daily[index]['icon'],
-            // //                         width: 30,
-            // //                         height: 30,
-            // //                       ),
-            // //                     ),
-            // //                   ),
-            // //                   SizedBox(width: 15),
-            // //                   Container(
-            // //                     width: (size.width - 90) * 0.5,
-            // //                     child: Column(
-            // //                       mainAxisAlignment: MainAxisAlignment.center,
-            // //                       crossAxisAlignment: CrossAxisAlignment.start,
-            // //                       children: [
-            // //                         Text(
-            // //                           daily[index]['name'],
-            // //                           style: TextStyle(
-            // //                               fontSize: 15,
-            // //                               color: black,
-            // //                               fontWeight: FontWeight.w500),
-            // //                           overflow: TextOverflow.ellipsis,
-            // //                         ),
-            // //                         SizedBox(height: 5),
-            // //                         Text(
-            // //                           daily[index]['date'],
-            // //                           style: TextStyle(
-            // //                               fontSize: 12,
-            // //                               color: black.withOpacity(0.5),
-            // //                               fontWeight: FontWeight.w400),
-            // //                           overflow: TextOverflow.ellipsis,
-            // //                         ),
-            // //                       ],
-            // //                     ),
-            // //                   )
-            // //                 ],
-            // //               ),
-            // //             ),
-            // //             Container(
-            // //               width: (size.width - 40) * 0.3,
-            // //               child: Row(
-            // //                 mainAxisAlignment: MainAxisAlignment.end,
-            // //                 children: [
-            // //                   Text(
-            // //                     daily[index]['price'],
-            // //                     style: TextStyle(
-            // //                         fontWeight: FontWeight.w600,
-            // //                         fontSize: 15,
-            // //                         color: Colors.green),
-            // //                   ),
-            // //                 ],
-            // //               ),
-            // //             )
-            // //           ],
-            // //         ),
-            // //         Padding(
-            // //           padding: const EdgeInsets.only(left: 65, top: 8),
-            // //           child: Divider(
-            // //             thickness: 0.8,
-            // //           ),
-            // //         )
-            // //       ],
-            // //     );
-            // //   })),
-            // // ),
-            // // SizedBox(
-            // //   height: 15,
-            // // ),
-            // // Padding(
-            // //   padding: const EdgeInsets.only(left: 20, right: 20),
-            // //   child: Row(
-            // //     children: [
-            // //       Spacer(),
-            // //       Padding(
-            // //         padding: const EdgeInsets.only(right: 80),
-            // //         child: Text(
-            // //           "Total",
-            // //           style: TextStyle(
-            // //               fontSize: 16,
-            // //               color: black.withOpacity(0.4),
-            // //               fontWeight: FontWeight.w600),
-            // //           overflow: TextOverflow.ellipsis,
-            // //         ),
-            // //       ),
-            // //       Spacer(),
-            // //       Padding(
-            // //         padding: const EdgeInsets.only(top: 5),
-            // //         child: Text(
-            // //           "\$1780.00",
-            // //           style: TextStyle(
-            // //               fontSize: 20,
-            // //               color: black,
-            // //               fontWeight: FontWeight.bold),
-            // //           overflow: TextOverflow.ellipsis,
-            // //         ),
-            // //       ),
-            // //     ],
-            // //   ),
+          // //   child: Column(
+          // //       children: List.generate(daily.length, (index) {
+          // //     return Column(
+          // //       children: [
+          // //         Row(
+          // //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // //           children: [
+          // //             Container(
+          // //               width: (size.width - 40) * 0.7,
+          // //               child: Row(
+          // //                 children: [
+          // //                   Container(
+          // //                     width: 50,
+          // //                     height: 50,
+          // //                     decoration: BoxDecoration(
+          // //                       shape: BoxShape.circle,
+          // //                       color: grey.withOpacity(0.1),
+          // //                     ),
+          // //                     child: Center(
+          // //                       child: Image.asset(
+          // //                         daily[index]['icon'],
+          // //                         width: 30,
+          // //                         height: 30,
+          // //                       ),
+          // //                     ),
+          // //                   ),
+          // //                   SizedBox(width: 15),
+          // //                   Container(
+          // //                     width: (size.width - 90) * 0.5,
+          // //                     child: Column(
+          // //                       mainAxisAlignment: MainAxisAlignment.center,
+          // //                       crossAxisAlignment: CrossAxisAlignment.start,
+          // //                       children: [
+          // //                         Text(
+          // //                           daily[index]['name'],
+          // //                           style: TextStyle(
+          // //                               fontSize: 15,
+          // //                               color: black,
+          // //                               fontWeight: FontWeight.w500),
+          // //                           overflow: TextOverflow.ellipsis,
+          // //                         ),
+          // //                         SizedBox(height: 5),
+          // //                         Text(
+          // //                           daily[index]['date'],
+          // //                           style: TextStyle(
+          // //                               fontSize: 12,
+          // //                               color: black.withOpacity(0.5),
+          // //                               fontWeight: FontWeight.w400),
+          // //                           overflow: TextOverflow.ellipsis,
+          // //                         ),
+          // //                       ],
+          // //                     ),
+          // //                   )
+          // //                 ],
+          // //               ),
+          // //             ),
+          // //             Container(
+          // //               width: (size.width - 40) * 0.3,
+          // //               child: Row(
+          // //                 mainAxisAlignment: MainAxisAlignment.end,
+          // //                 children: [
+          // //                   Text(
+          // //                     daily[index]['price'],
+          // //                     style: TextStyle(
+          // //                         fontWeight: FontWeight.w600,
+          // //                         fontSize: 15,
+          // //                         color: Colors.green),
+          // //                   ),
+          // //                 ],
+          // //               ),
+          // //             )
+          // //           ],
+          // //         ),
+          // //         Padding(
+          // //           padding: const EdgeInsets.only(left: 65, top: 8),
+          // //           child: Divider(
+          // //             thickness: 0.8,
+          // //           ),
+          // //         )
+          // //       ],
+          // //     );
+          // //   })),
+          // // ),
+          // // SizedBox(
+          // //   height: 15,
+          // // ),
+          // // Padding(
+          // //   padding: const EdgeInsets.only(left: 20, right: 20),
+          // //   child: Row(
+          // //     children: [
+          // //       Spacer(),
+          // //       Padding(
+          // //         padding: const EdgeInsets.only(right: 80),
+          // //         child: Text(
+          // //           "Total",
+          // //           style: TextStyle(
+          // //               fontSize: 16,
+          // //               color: black.withOpacity(0.4),
+          // //               fontWeight: FontWeight.w600),
+          // //           overflow: TextOverflow.ellipsis,
+          // //         ),
+          // //       ),
+          // //       Spacer(),
+          // //       Padding(
+          // //         padding: const EdgeInsets.only(top: 5),
+          // //         child: Text(
+          // //           "\$1780.00",
+          // //           style: TextStyle(
+          // //               fontSize: 20,
+          // //               color: black,
+          // //               fontWeight: FontWeight.bold),
+          // //           overflow: TextOverflow.ellipsis,
+          // //         ),
+          // //       ),
+          // //     ],
+          // //   ),
           )
         ],
       ),
@@ -290,9 +291,9 @@ class _DailyPageState extends State<DailyPage> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             isFavorite
-                                ? Icon(Icons.favorite, color: Colors.red)
+                                ? Icon(Icons.favorite, color: Color(0xFFEF7532))
                                 : Icon(Icons.favorite_border,
-                                color: Colors.red)
+                                color: Color(0xFFEF7532))
                           ])),
                   Hero(
                       tag: imgPath,
@@ -306,7 +307,7 @@ class _DailyPageState extends State<DailyPage> {
                   SizedBox(height: 7.0),
                   Text(price,
                       style: TextStyle(
-                          color: Color(0xFF2161F3),
+                          color: Color(0xFFCC8053),
                           fontFamily: 'Varela',
                           fontSize: 14.0)),
                   Text(name,
@@ -324,11 +325,11 @@ class _DailyPageState extends State<DailyPage> {
                           children: [
                             if (!added) ...[
                               Icon(Icons.shopping_basket,
-                                  color: Color(0xFF2161F3), size: 12.0),
+                                  color: Color(0xFFD17E50), size: 12.0),
                               Text('Details',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFF2161F3),
+                                      color: Color(0xFFD17E50),
                                       fontSize: 12.0))
                             ],
                             if (added) ...[
@@ -337,7 +338,7 @@ class _DailyPageState extends State<DailyPage> {
                               Text('3',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFF2161F3),
+                                      color: Color(0xFFD17E50),
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12.0)),
                               Icon(Icons.add_circle_outline,

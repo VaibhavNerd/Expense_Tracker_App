@@ -1,7 +1,8 @@
 import 'package:budget_tracker_ui/json/create_budget_json.dart';
 import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
+
 
 class CreatBudgetPage extends StatefulWidget {
   @override

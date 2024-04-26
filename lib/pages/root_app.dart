@@ -5,8 +5,9 @@ import 'package:budget_tracker_ui/pages/profile_page.dart';
 import 'package:budget_tracker_ui/pages/stats_page.dart';
 import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
 
 class RootApp extends StatefulWidget {
   @override
@@ -47,7 +48,7 @@ class _RootAppState extends State<RootApp> {
               Icons.add,
               size: 25,
             ),
-            backgroundColor: Color(0xFF1B4BC6),
+            backgroundColor: Colors.pink
             //params
             ),
         floatingActionButtonLocation:
@@ -64,7 +65,7 @@ class _RootAppState extends State<RootApp> {
   Widget getFooter() {
     List<IconData> iconItems = [
       Ionicons.md_calendar,
-      Ionicons.md_stats,
+      Ionicons.md_stats_chart,
       Ionicons.md_wallet,
       Ionicons.ios_person,
     ];

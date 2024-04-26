@@ -3,8 +3,9 @@ import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:budget_tracker_ui/widget/chart.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+
 import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
 
 class StatsPage extends StatefulWidget {
   @override
@@ -31,13 +32,13 @@ class _StatsPageState extends State<StatsPage> {
         "icon": Icons.arrow_back,
         "color": blue,
         "label": "Income",
-        "cost": "\Rs.60,593"
+        "cost": "\$6593.75"
       },
       {
         "icon": Icons.arrow_forward,
         "color": red,
         "label": "Expense",
-        "cost": "Rs.29,645"
+        "cost": "\$2645.50"
       }
     ];
     return SingleChildScrollView(
@@ -167,7 +168,7 @@ class _StatsPageState extends State<StatsPage> {
                             height: 10,
                           ),
                           Text(
-                            "\Rs.2,56,446.90",
+                            "\$2446.90",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 25,

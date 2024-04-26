@@ -1,6 +1,7 @@
 import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
+
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -10,8 +11,8 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   TextEditingController _email =
-      TextEditingController(text: "vaibhav2012093@akgec.ac.in");
-  TextEditingController dateOfBirth = TextEditingController(text: "04-19-2001");
+      TextEditingController(text: "abbie_wilson@gmail.com");
+  TextEditingController dateOfBirth = TextEditingController(text: "04-19-1992");
   TextEditingController password = TextEditingController(text: "123456");
   @override
   Widget build(BuildContext context) {
@@ -84,7 +85,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       shape: BoxShape.circle,
                                       image: DecorationImage(
                                           image: NetworkImage(
-                                              "https://i.ibb.co/tcFSGFT/v.jpg"),
+                                              "https://images.unsplash.com/photo-1531256456869-ce942a665e80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI4fHxwcm9maWxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"),
                                           fit: BoxFit.cover)),
                                 ),
                               )
@@ -98,7 +99,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Vaibhav Yadav",
+                              "Abbie Wilson",
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -108,7 +109,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               height: 10,
                             ),
                             Text(
-                              "Credit score: 70.00",
+                              "Credit score: 73.50",
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -145,7 +146,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "India Bank",
+                                "United Bank Asia",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 12,
@@ -155,7 +156,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 10,
                               ),
                               Text(
-                                "\Rs.40,02,446.90",
+                                "\$2446.90",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,
@@ -228,7 +229,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 20,
                 ),
                 Text(
-                  "Password",
+                  "Date of birth",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,

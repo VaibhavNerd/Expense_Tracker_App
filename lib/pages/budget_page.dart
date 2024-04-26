@@ -2,7 +2,8 @@ import 'package:budget_tracker_ui/json/budget_json.dart';
 import 'package:budget_tracker_ui/json/day_month.dart';
 import 'package:budget_tracker_ui/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_font_icons/flutter_font_icons.dart';
+
 
 class BudgetPage extends StatefulWidget {
   @override
@@ -188,7 +189,7 @@ class _BudgetPageState extends State<BudgetPage> {
                             Padding(
                               padding: const EdgeInsets.only(top: 3),
                               child: Text(
-                                "\Rs40,00,000.00",
+                                "\$5000.00",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 13,
